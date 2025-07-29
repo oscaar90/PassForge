@@ -52,20 +52,8 @@ http://localhost:5000
 ![Copied feedback](docs/copied_feedback.png)
 
 📁 Estructura
-PassForge/
-├── app/
-│   ├── __init__.py
-│   ├── routes.py
-│   ├── generator.py
-├── static/
-│   ├── css/style.css
-│   └── js/main.js
-├── templates/
-│   └── index.html
-├── run.py
-├── requirements.txt
-└── README.md
 
+<pre lang="markdown"> <code> ## 📁 Project structure ``` PassForge/ ├── app/ │ ├── __init__.py │ ├── routes.py │ ├── generator.py ├── static/ │ ├── css/ │ │ └── style.css │ └── js/ │ └── main.js ├── templates/ │ └── index.html ├── run.py ├── requirements.txt └── README.md ``` </code> </pre>
 
 🧪 Estado del proyecto
 ✅ Funcional y estable
