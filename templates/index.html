@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PassForge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 PassForge</h1>
+        <form method="POST">
+            <label>
+  Length:
+  <input type="number" name="length" value="{{ length or 16 }}" min="4" max="128" />
+</label>
+<p></p>
+<label>
+  <input type="checkbox" name="lowercase" {% if use_lowercase %}checked{% endif %}> Lowercase
+</label>
+<label>
+  <input type="checkbox" name="uppercase" {% if use_uppercase %}checked{% endif %}> Uppercase
+</label>
+<label>
+  <input type="checkbox" name="numbers" {% if use_numbers %}checked{% endif %}> Numbers
+</label>
+<label>
+  <input type="checkbox" name="symbols" {% if use_symbols %}checked{% endif %}> Symbols
+</label>
+
+
+<br>
+
+            <button type="submit">Generate Password</button>
+        </form>
+
+        {% if password %}
+<div class="result">
+  <input type="text" id="generated" value="{{ password }}" readonly>
+  <button onclick="copyToClipboard()">Copy</button>
+  <span id="copy-msg" class="copy-feedback">🔒 Copied!</span>
+</div>
+        {% endif %}
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
