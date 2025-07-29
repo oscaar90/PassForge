@@ -53,7 +53,7 @@ http://localhost:5000
 
 📁 Estructura
 
-<pre lang="markdown"> <code> ## 📁 Project structure PassForge/ ├── app/ │ ├── __init__.py │ ├── routes.py │ ├── generator.py ├── static/ │ ├── css/ │ │ └── style.css │ └── js/ │ └── main.js ├── templates/ │ └── index.html ├── run.py ├── requirements.txt └── README.md </code> </pre>
+ ## 📁 Project structure PassForge/ ├── app/ │ ├── __init__.py │ ├── routes.py │ ├── generator.py ├── static/ │ ├── css/ │ │ └── style.css │ └── js/ │ └── main.js ├── templates/ │ └── index.html ├── run.py ├── requirements.txt └── README.md 
 
 🧪 Estado del proyecto
 ✅ Funcional y estable
